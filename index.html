@@ -3,168 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>알면 알수록, iPhone.</title>
+    <title>로또 번호 추천</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Apple Navigation Bar -->
-    <nav class="apple-nav">
-        <div class="nav-content">
-            <a href="#" class="nav-logo">
-                <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"/>
-                </svg>
-            </a>
-            <ul class="nav-list">
-                <li><a href="#">스토어</a></li>
-                <li><a href="#">Mac</a></li>
-                <li><a href="#">iPad</a></li>
-                <li><a href="#">iPhone</a></li>
-                <li><a href="#">Watch</a></li>
-                <li><a href="#">Vision</a></li>
-                <li><a href="#">AirPods</a></li>
-                <li><a href="#">TV 및 홈</a></li>
-                <li><a href="#">엔터테인먼트</a></li>
-                <li><a href="#">액세서리</a></li>
-                <li><a href="#">고객지원</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button class="nav-search" aria-label="검색">
-                    <svg height="44" viewBox="0 0 15 44" width="15" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m14.298 27.202-3.87-3.87c.701-1.02 1.112-2.251 1.112-3.582 0-3.589-2.911-6.5-6.5-6.5s-6.5 2.911-6.5 6.5 2.911 6.5 6.5 6.5c1.331 0 2.562-.411 3.582-1.112l3.87 3.87c.387.387.896.58 1.404.58s1.017-.193 1.404-.58c.775-.775.775-2.033-.002-2.806zm-12.758-7.952c0-2.486 2.014-4.5 4.5-4.5s4.5 2.014 4.5 4.5-2.014 4.5-4.5 4.5-4.5-2.014-4.5-4.5z"/>
-                    </svg>
-                </button>
-                <button class="nav-bag" aria-label="장바구니">
-                    <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z"/>
-                    </svg>
-                </button>
-            </div>
-            <button class="nav-toggle" aria-label="메뉴">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+    <div class="container">
+        <header>
+            <h1>🎰 로또 번호 추천</h1>
+            <p class="subtitle">통계 기반 로또 번호 조합</p>
+        </header>
 
-    <header class="page-header">
-        <h1>알면 알수록, iPhone.</h1>
-    </header>
+        <main id="lottoSets">
+            <!-- 로또 세트들이 여기에 표시됩니다 -->
+        </main>
+    </div>
 
-    <main class="features-container">
-        <!-- Feature 1: Camera -->
-        <section class="feature-card">
-            <div class="feature-content">
-                <div class="feature-label">혁신</div>
-                <h2>아름답게, 견고하게,<br>설계부터 다르게.</h2>
-                <div class="feature-image">
-                    <img src="https://picsum.photos/600/800?random=1" alt="iPhone Camera" loading="lazy">
-                </div>
-                <button class="expand-btn" aria-label="더 알아보기">+</button>
-            </div>
-        </section>
-
-        <!-- Feature 2: Life Moments -->
-        <section class="feature-card">
-            <div class="feature-content">
-                <div class="feature-label">촬영 가이드</div>
-                <h2>인생 사진과<br>인생 비디오를 마음껏.</h2>
-                <div class="feature-image">
-                    <img src="https://picsum.photos/600/800?random=2" alt="Life moments" loading="lazy">
-                </div>
-                <button class="expand-btn" aria-label="더 알아보기">+</button>
-            </div>
-        </section>
-
-        <!-- Feature 3: A19 Pro Chip -->
-        <section class="feature-card">
-            <div class="feature-content">
-                <div class="feature-label">칩 그리고 배터리 사용 시간</div>
-                <h2>빠르면서 오래간다.</h2>
-                <div class="feature-image chip-image">
-                    <div class="chip-display">
-                        <div class="apple-logo">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
-                            </svg>
-                        </div>
-                        <div class="chip-name">A19</div>
-                        <div class="chip-model">PRO</div>
-                    </div>
-                </div>
-                <button class="expand-btn" aria-label="더 알아보기">+</button>
-            </div>
-        </section>
-
-        <!-- Feature 4: Apple Intelligence -->
-        <section class="feature-card">
-            <div class="feature-content">
-                <div class="feature-label">iOS 및 Apple Intelligence</div>
-                <h2>변화는 대대적,<br>경험은 더욱 환상적.</h2>
-                <div class="feature-image">
-                    <img src="https://picsum.photos/600/800?random=3" alt="Apple Intelligence" loading="lazy">
-                </div>
-                <button class="expand-btn" aria-label="더 알아보기">+</button>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="apple-footer">
-        <div class="footer-content">
-            <h2 class="footer-title">iPhone</h2>
-
-            <div class="footer-columns">
-                <!-- Column 1 -->
-                <div class="footer-column">
-                    <h3>iPhone 살펴보기</h3>
-                    <ul>
-                        <li><a href="#"><strong>iPhone 모두 살펴보기</strong></a></li>
-                        <li><a href="#"><strong>iPhone 17 Pro</strong></a></li>
-                        <li><a href="#"><strong>iPhone Air</strong></a></li>
-                        <li><a href="#"><strong>iPhone 17</strong></a></li>
-                        <li><a href="#"><strong>iPhone 16</strong></a></li>
-                        <li><a href="#"><strong>iPhone 16e</strong></a></li>
-                    </ul>
-
-                    <h3>iPhone 비교하기</h3>
-                    <ul>
-                        <li><a href="#">안드로이드에서 갈아타기</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 2 -->
-                <div class="footer-column">
-                    <h3>iPhone 쇼핑하기</h3>
-                    <ul>
-                        <li><a href="#">iPhone 쇼핑하기</a></li>
-                        <li><a href="#">iPhone 액세서리</a></li>
-                        <li><a href="#">Apple Trade In</a></li>
-                        <li><a href="#">할부 방식</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3 -->
-                <div class="footer-column">
-                    <h3>그 외 iPhone 관련 항목</h3>
-                    <ul>
-                        <li><a href="#">iPhone 지원</a></li>
-                        <li><a href="#">AppleCare</a></li>
-                        <li><a href="#">iOS 26</a></li>
-                        <li><a href="#">Apple Intelligence</a></li>
-                        <li><a href="#">Apple이 만든 앱</a></li>
-                        <li><a href="#">iPhone의 개인정보 보호</a></li>
-                        <li><a href="#">Mac과 함께 다룰 탁월하게</a></li>
-                        <li><a href="#">iCloud+</a></li>
-                        <li><a href="#">Apple 지갑, Apple Pay</a></li>
-                        <li><a href="#">Siri</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="lotto-data.js"></script>
+    <script src="user.js"></script>
 </body>
 </html>

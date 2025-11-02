@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 번호 추천 - 관리자</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎰 로또 번호 추천 - 관리자</h1>
+            <p class="subtitle">번호 입력 및 관리</p>
+        </header>
+
+        <main id="lottoSets">
+            <!-- 로또 세트들이 여기에 표시됩니다 -->
+        </main>
+
+        <div class="input-section">
+            <h2>새로운 세트 추가</h2>
+            <form id="lottoForm">
+                <div class="form-group">
+                    <label for="numbers">번호 (쉼표로 구분, 6개):</label>
+                    <input type="text" id="numbers" placeholder="예: 3, 14, 22, 29, 34, 41" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="stats">통계 근거:</label>
+                    <input type="text" id="stats" placeholder="예: 홀짝 3:3, 고/저 3:3, 합계 143" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">선택 이유:</label>
+                    <textarea id="reason" rows="3" placeholder="예: 22, 34는 상위 출현 번호 / 29, 14는 최근 미출현 / 끝자리 중복 없음" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">세트 추가</button>
+            </form>
+        </div>
+
+        <div class="actions">
+            <label for="uploadJson" class="btn-upload">
+                📤 JSON 업로드
+                <input type="file" id="uploadJson" accept=".json" style="display: none;">
+            </label>
+            <button id="downloadJson" class="btn-download">📥 JSON 다운로드</button>
+            <button id="clearAll" class="btn-clear">전체 삭제</button>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
